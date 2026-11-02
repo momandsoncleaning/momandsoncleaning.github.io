@@ -264,6 +264,12 @@ textarea { min-height: 100px; resize: vertical; }
 .paysplit small { display: block; color: var(--muted); font-size: .78rem; }
 .paysplit b { font: 800 1.1rem var(--display); color: var(--navy); font-variant-numeric: tabular-nums; }
 .fine { font-size: .84rem; color: var(--muted); }
+.fine b { color: var(--navy); }
+.est-pill { display: inline-block; margin-top: 8px; padding: 3px 10px; border-radius: 999px; background: rgba(255,255,255,.12); color: #dbe7f5; font-size: .78rem; font-weight: 600; }
+.price-note { display: flex; gap: 14px; align-items: flex-start; padding: 18px 20px; margin-top: 22px; background: var(--sky); border-color: var(--sky-2); }
+.price-note .ibox { margin: 0; background: #fff; flex: none; }
+.price-note p { color: var(--ink); font-size: .94rem; }
+.price-note b { color: var(--navy); }
 
 /* policy */
 .policy { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
@@ -525,7 +531,7 @@ footer .copy { grid-column: 1 / -1; border-top: 1px solid var(--line); padding-t
         </div>
         <div class="float-card" aria-live="polite">
           <span class="badge"><svg class="ico"><use href="#i-tag"/></svg></span>
-          <div><span>Standard clean · 3 bed / 2 bath</span><b id="heroPrice">$180</b><a href="#estimate">Estimate your home →</a></div>
+          <div><span>Estimate · standard clean, 3 bed / 2 bath</span><b id="heroPrice">$180</b><a href="#estimate">Estimate your home →</a></div>
         </div>
       </div>
     </div>
@@ -644,7 +650,7 @@ footer .copy { grid-column: 1 / -1; border-top: 1px solid var(--line); padding-t
           </div>
         </article>
       </div>
-      <p class="note">“From” prices are for a 1-bedroom home with up to 2 bathrooms. Bigger homes, pets or a home that hasn't been cleaned in a while cost more. Use the estimator below for your home. We confirm the exact price after seeing photos or a quick walkthrough.</p>
+      <div class="card price-note rv"><span class="ibox"><svg class="ico"><use href="#i-info"/></svg></span><p><b>Every home is different, so every price is personal.</b> The prices on this site are friendly starting estimates, not set prices. Once we see a few photos or take a quick look at your home in person, we'll give you your exact price, so there are no surprises on cleaning day. “From” prices are for a 1-bedroom home with up to 2 bathrooms; bigger homes, pets or a home that hasn't been cleaned in a while cost more. Prices are subject to change.</p></div>
     </div>
   </section>
 
@@ -704,6 +710,7 @@ footer .copy { grid-column: 1 / -1; border-top: 1px solid var(--line); padding-t
           <div class="top-part">
             <div class="k">Estimated price</div>
             <div class="price" id="price">$0</div>
+            <span class="est-pill">Estimate · subject to change</span>
             <div class="range" id="range"></div>
             <div class="summary-line"><svg class="ico"><use href="#i-home"/></svg><span id="estSummary"></span></div>
           </div>
@@ -713,7 +720,7 @@ footer .copy { grid-column: 1 / -1; border-top: 1px solid var(--line); padding-t
               <div><small>Deposit to book</small><b>$25</b></div>
               <div><small>After the clean</small><b id="balance">$0</b></div>
             </div>
-            <p class="fine">This is an estimate. Your final price is confirmed after we review your home's condition and what you need, from photos or a quick walkthrough. The $25 deposit counts toward the price; cancel 24+ hours ahead and it's refunded.</p>
+            <p class="fine"><b>This is a starting estimate, not a set price.</b> Every home is a little different, so we confirm your exact price after seeing photos or taking a quick look at your home. Prices are subject to change. The $25 deposit counts toward the price; cancel 24+ hours ahead and it's refunded.</p>
             <a class="btn btn-primary btn-block" href="#quote" style="margin-top:16px" id="useEst">Request this clean <svg class="ico"><use href="#i-arrow"/></svg></a>
           </div>
         </aside>
@@ -811,7 +818,7 @@ footer .copy { grid-column: 1 / -1; border-top: 1px solid var(--line); padding-t
     <div class="wrap">
       <div class="head center rv"><span class="eyebrow">FAQ</span><h2 id="faq-h">Questions, answered</h2></div>
       <div class="faq">
-        <details class="card rv"><summary>How much does a house cleaning cost?<svg class="ico"><use href="#i-plus"/></svg></summary><div>It depends on your home's size, the type of clean and any extras. A standard clean of a 3-bedroom, 2-bathroom home is about <span class="js-p3">$180</span>. Use the <a href="#estimate">price estimator</a> for your home. We confirm the exact price after seeing photos or a quick walkthrough.</div></details>
+        <details class="card rv"><summary>How much does a house cleaning cost?<svg class="ico"><use href="#i-plus"/></svg></summary><div>It depends on your home's size, the type of clean and any extras. A standard clean of a 3-bedroom, 2-bathroom home is about <span class="js-p3">$180</span>. Use the <a href="#estimate">price estimator</a> for your home. Website prices are estimates, not set prices, and are subject to change. We confirm your exact price after seeing photos or taking a quick look at your home in person.</div></details>
         <details class="card rv"><summary>Do you both come to every clean?<svg class="ico"><use href="#i-plus"/></svg></summary><div>Yes. Melissa and her son Justin clean every home together, every time. The people you text are the people who show up.</div></details>
         <details class="card rv"><summary>How does the $25 deposit work?<svg class="ico"><use href="#i-plus"/></svg></summary><div>Once we've confirmed your price and date, you send a $25 deposit on Venmo to <a href="https://venmo.com/u/MSCleaningCo" target="_blank" rel="noopener">@MSCleaningCo</a> to hold your spot. It counts toward your final price, and you pay the rest after the clean.</div></details>
         <details class="card rv"><summary>What if I need to cancel?<svg class="ico"><use href="#i-plus"/></svg></summary><div>Cancel at least 24 hours before your clean and we refund your deposit. Cancellations with less than 24 hours' notice, and no-shows, keep the deposit.</div></details>
