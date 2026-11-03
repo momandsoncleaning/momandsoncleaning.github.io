@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>House Cleaning in Lewisville, DeSoto &amp; DFW | Mom and Son Cleaning Co.</title>
-<meta name="description" content="Family-owned house cleaning in Lewisville, DeSoto and the Dallas–Fort Worth area. A mother-and-son team cleans every home. Standard, deep, move-in/move-out and Airbnb cleans. Instant price estimate and free quotes by text, call or email.">
+<title>House Cleaning in Lewisville, Flower Mound, Dallas &amp; DeSoto | Mom and Son Cleaning Co.</title>
+<meta name="description" content="Family-owned house cleaning in Lewisville, Flower Mound, Dallas, DeSoto and 12 more Dallas-area cities, open every day 6 AM to 6 PM. A mother-and-son team cleans every home. Standard, deep, move-in/move-out and Airbnb cleans. Instant price estimate and free quotes by text, call or email.">
 <meta name="theme-color" content="#0f2a4a">
 <link rel="canonical" href="https://jlthetrader.github.io/momandsoncleaning/">
 <meta property="og:url" content="https://jlthetrader.github.io/momandsoncleaning/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Mom and Son Cleaning Co. · House cleaning in Lewisville, DeSoto &amp; DFW">
+<meta property="og:title" content="Mom and Son Cleaning Co. · House cleaning in Lewisville, Flower Mound, Dallas &amp; DeSoto">
 <meta property="og:description" content="A mother-and-son team that cleans every home themselves. Get an instant estimate and a free quote.">
 <meta name="twitter:card" content="summary">
 <script>document.documentElement.classList.add("js");</script>
@@ -28,9 +28,23 @@
   "email": "justinsproacc@gmail.com",
   "areaServed": [
     { "@type": "City", "name": "Lewisville", "containedInPlace": { "@type": "State", "name": "Texas" } },
-    { "@type": "City", "name": "DeSoto", "containedInPlace": { "@type": "State", "name": "Texas" } },
-    { "@type": "Place", "name": "Dallas–Fort Worth metroplex, Texas" }
+    { "@type": "City", "name": "Highland Village", "containedInPlace": { "@type": "State", "name": "Texas" } },
+    { "@type": "City", "name": "Flower Mound", "containedInPlace": { "@type": "State", "name": "Texas" } },
+    { "@type": "City", "name": "Coppell", "containedInPlace": { "@type": "State", "name": "Texas" } },
+    { "@type": "City", "name": "Grapevine", "containedInPlace": { "@type": "State", "name": "Texas" } },
+    { "@type": "City", "name": "Carrollton", "containedInPlace": { "@type": "State", "name": "Texas" } },
+    { "@type": "City", "name": "Farmers Branch", "containedInPlace": { "@type": "State", "name": "Texas" } },
+    { "@type": "City", "name": "Addison", "containedInPlace": { "@type": "State", "name": "Texas" } },
+    { "@type": "City", "name": "Irving", "containedInPlace": { "@type": "State", "name": "Texas" } },
+    { "@type": "City", "name": "Grand Prairie", "containedInPlace": { "@type": "State", "name": "Texas" } },
+    { "@type": "City", "name": "Dallas", "containedInPlace": { "@type": "State", "name": "Texas" } },
+    { "@type": "City", "name": "University Park", "containedInPlace": { "@type": "State", "name": "Texas" } },
+    { "@type": "City", "name": "Highland Park", "containedInPlace": { "@type": "State", "name": "Texas" } },
+    { "@type": "City", "name": "Duncanville", "containedInPlace": { "@type": "State", "name": "Texas" } },
+    { "@type": "City", "name": "Cedar Hill", "containedInPlace": { "@type": "State", "name": "Texas" } },
+    { "@type": "City", "name": "DeSoto", "containedInPlace": { "@type": "State", "name": "Texas" } }
   ],
+  "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], "opens": "06:00", "closes": "18:00" }],
   "paymentAccepted": "Venmo (preferred) and other payment methods",
   "currenciesAccepted": "USD",
   "priceRange": "$$",
@@ -349,9 +363,27 @@ footer .copy { grid-column: 1 / -1; border-top: 1px solid var(--line); padding-t
 .mbar { display: none; }
 
 /* reveal */
+.area-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; align-items: start; }
+.area-col { padding: 22px 24px; }
+.area-col h3 { margin: 0 0 12px; color: var(--navy); }
+.area-col ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.area-col li { display: flex; align-items: center; gap: 10px; }
+.area-col li::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--blue); flex: none; }
+.hours-bar { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 10px; margin-top: 18px; padding: 16px 20px; border-radius: var(--r); background: var(--sky); color: var(--navy); text-align: center; }
+.hours-bar .ico { flex: none; }
+@media (max-width: 760px) { .area-grid { grid-template-columns: 1fr; } }
 .js .rv { opacity: 0; transform: translateY(14px); transition: opacity .5s ease, transform .5s ease; }
 .js .rv.in { opacity: 1; transform: none; }
-@media (prefers-reduced-motion: reduce) { .js .rv { opacity: 1; transform: none; transition: none; } .svc:hover { transform: none; } }
+@media (prefers-reduced-motion: reduce) { .area-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; align-items: start; }
+.area-col { padding: 22px 24px; }
+.area-col h3 { margin: 0 0 12px; color: var(--navy); }
+.area-col ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.area-col li { display: flex; align-items: center; gap: 10px; }
+.area-col li::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--blue); flex: none; }
+.hours-bar { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 10px; margin-top: 18px; padding: 16px 20px; border-radius: var(--r); background: var(--sky); color: var(--navy); text-align: center; }
+.hours-bar .ico { flex: none; }
+@media (max-width: 760px) { .area-grid { grid-template-columns: 1fr; } }
+.js .rv { opacity: 1; transform: none; transition: none; } .svc:hover { transform: none; } }
 
 @media (max-width: 1000px) {
   .trust { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -437,7 +469,7 @@ footer .copy { grid-column: 1 / -1; border-top: 1px solid var(--line); padding-t
   <div class="wrap">
     <a class="brand" href="#top" aria-label="Mom and Son Cleaning Co. home">
       <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 11.5 12 5l8 6.5V19a1 1 0 0 1-1 1h-4.5v-5h-5v5H5a1 1 0 0 1-1-1v-7.5Z" fill="#fff"/><path d="M19 2.5l.7 1.8 1.8.7-1.8.7-.7 1.8-.7-1.8-1.8-.7 1.8-.7Z" fill="#9cc2ec"/></svg></span>
-      <span>Mom and Son Cleaning Co.<small>Family-owned · <span class="js-area">Lewisville, DeSoto and the DFW area</span></small></span>
+      <span>Mom and Son Cleaning Co.<small>Family-owned · <span class="js-area">16 Dallas-area cities</span></small></span>
     </a>
     <button class="navtoggle" id="navToggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="Open menu"><svg class="ico"><use href="#i-menu"/></svg></button>
     <nav class="nav" id="siteNav" aria-label="Main">
@@ -465,7 +497,7 @@ footer .copy { grid-column: 1 / -1; border-top: 1px solid var(--line); padding-t
           <a class="btn btn-ghost" href="#services">View Services</a>
         </div>
         <div class="hero-meta">
-          <span><svg class="ico"><use href="#i-pin"/></svg>Serving <span class="js-area">Lewisville, DeSoto and the DFW area</span></span>
+          <span><svg class="ico"><use href="#i-pin"/></svg>Serving <span class="js-area">16 Dallas-area cities</span></span>
           <span><svg class="ico"><use href="#i-bucket"/></svg>Supplies included</span>
           <span><svg class="ico"><use href="#i-pin"/></svg>No travel fee</span>
           <span><svg class="ico"><use href="#i-wallet"/></svg>Pay the rest after the clean</span>
@@ -559,7 +591,7 @@ footer .copy { grid-column: 1 / -1; border-top: 1px solid var(--line); padding-t
       <div class="story rv">
         <span class="eyebrow">Meet the family</span>
         <h2 id="family-h">Hi, we're the Mom and the Son.</h2>
-        <p>Mom and Son Cleaning Co. is exactly what it sounds like: Melissa and her son Justin, cleaning homes together in Lewisville, DeSoto and across DFW.</p>
+        <p>Mom and Son Cleaning Co. is exactly what it sounds like: Melissa and her son Justin, cleaning homes together across the Dallas area.</p>
         <p>When you book with us, you text the same people who clean your home. No call centers and no strangers you've never met.</p>
         <div class="ctas" style="margin-top:24px"><a class="btn btn-primary" href="#quote">Get a Free Quote</a><a class="btn btn-ghost" href="#contact">Call or text us</a></div>
       </div>
@@ -756,6 +788,22 @@ footer .copy { grid-column: 1 / -1; border-top: 1px solid var(--line); padding-t
   </section>
 
   <!-- QUOTE -->
+  <section id="areas" aria-labelledby="areas-h">
+    <div class="wrap">
+      <div class="head rv">
+        <span class="eyebrow">Where &amp; when</span>
+        <h2 id="areas-h">Where we clean</h2>
+        <p>No travel fee anywhere on this list. Not sure if you're in our area? Text us your neighborhood at <a href="sms:+14695592298">(469) 559-2298</a>.</p>
+      </div>
+      <div class="area-grid">
+        <div class="card area-col rv"><h3>Northwest</h3><ul><li>Lewisville</li><li>Highland Village</li><li>Flower Mound</li><li>Coppell</li><li>Grapevine</li></ul></div>
+        <div class="card area-col rv"><h3>Dallas &amp; Mid-Cities</h3><ul><li>Carrollton</li><li>Farmers Branch</li><li>Addison</li><li>Irving</li><li>Grand Prairie</li><li>Dallas</li><li>University Park</li><li>Highland Park</li></ul></div>
+        <div class="card area-col rv"><h3>South Dallas</h3><ul><li>Duncanville</li><li>Cedar Hill</li><li>DeSoto</li></ul></div>
+      </div>
+      <div class="hours-bar rv"><svg class="ico"><use href="#i-clock"/></svg><span><b>Open every day, Monday to Sunday</b> · 6:00 AM – 6:00 PM</span></div>
+    </div>
+  </section>
+
   <section id="quote" aria-labelledby="quote-h">
     <div class="wrap">
       <div class="head rv">
@@ -805,7 +853,8 @@ footer .copy { grid-column: 1 / -1; border-top: 1px solid var(--line); padding-t
             <div class="mini">
               <div id="emailLine" hidden><svg class="ico"><use href="#i-mail"/></svg><a id="emailLink" href="#"></a></div>
               <div><svg class="ico"><use href="#i-wallet"/></svg><span>Venmo <a href="https://venmo.com/u/MSCleaningCo" target="_blank" rel="noopener"><b>@MSCleaningCo</b></a> preferred · all payment types accepted</span></div>
-              <div><svg class="ico"><use href="#i-pin"/></svg><span>Serving <span class="js-area">Lewisville, DeSoto and the DFW area</span></span></div>
+              <div><svg class="ico"><use href="#i-pin"/></svg><span>Serving <a href="#areas"><span class="js-area">16 Dallas-area cities</span></a></span></div>
+              <div><svg class="ico"><use href="#i-clock"/></svg><span>Open every day, 6:00 AM – 6:00 PM</span></div>
             </div>
           </div>
         </div>
@@ -826,7 +875,8 @@ footer .copy { grid-column: 1 / -1; border-top: 1px solid var(--line); padding-t
         <details class="card rv"><summary>Do you offer discounts for recurring cleans?<svg class="ico"><use href="#i-plus"/></svg></summary><div>Yes, on Standard and Airbnb cleans: 15% off weekly, 10% off every 2 weeks and 5% off monthly.</div></details>
         <details class="card rv"><summary>Do you clean homes with pets?<svg class="ico"><use href="#i-plus"/></svg></summary><div>Yes. Homes with pets usually take a bit longer because of pet hair, so the estimate adds 10%. Let us know about your pets in the quote form.</div></details>
         <details class="card rv"><summary>How do I pay?<svg class="ico"><use href="#i-plus"/></svg></summary><div>We take all forms of payment. Venmo is easiest for us: <a href="https://venmo.com/u/MSCleaningCo" target="_blank" rel="noopener">@MSCleaningCo</a>. That covers the $25 deposit to book and the balance after the clean. If you'd rather pay another way, just let us know.</div></details>
-        <details class="card rv"><summary>What areas do you serve?<svg class="ico"><use href="#i-plus"/></svg></summary><div>Lewisville, DeSoto and across the Dallas–Fort Worth area, with no travel fee. Not sure if you're in our area? Text us your neighborhood at <a href="sms:+14695592298">(469) 559-2298</a>.</div></details>
+        <details class="card rv"><summary>What are your hours?<svg class="ico"><use href="#i-plus"/></svg></summary><div>We're open every day, Monday to Sunday, from 6:00 AM to 6:00 PM.</div></details>
+        <details class="card rv"><summary>What areas do you serve?<svg class="ico"><use href="#i-plus"/></svg></summary><div>Northwest: Lewisville, Highland Village, Flower Mound, Coppell and Grapevine. Dallas &amp; Mid-Cities: Carrollton, Farmers Branch, Addison, Irving, Grand Prairie, Dallas, University Park and Highland Park. South Dallas: Duncanville, Cedar Hill and DeSoto. There's no travel fee. Not sure if you're in our area? Text us your neighborhood at <a href="sms:+14695592298">(469) 559-2298</a>.</div></details>
       </div>
     </div>
   </section>
@@ -852,12 +902,13 @@ footer .copy { grid-column: 1 / -1; border-top: 1px solid var(--line); padding-t
   <div class="wrap">
     <div>
       <a class="brand" href="#top"><span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 11.5 12 5l8 6.5V19a1 1 0 0 1-1 1h-4.5v-5h-5v5H5a1 1 0 0 1-1-1v-7.5Z" fill="#fff"/></svg></span>Mom and Son Cleaning Co.</a>
-      <p style="margin-top:12px;max-width:36ch">Family-owned house cleaning in <span class="js-area">Lewisville, DeSoto and the DFW area</span>.</p>
+      <p style="margin-top:12px;max-width:36ch">Family-owned house cleaning in <span class="js-area">16 Dallas-area cities</span>.</p>
     </div>
     <div>
       <h3>Contact</h3>
       <ul>
         <li>Justin <a href="tel:+14695592298">(469) 559-2298</a></li>
+        <li>Open every day, 6:00 AM – 6:00 PM</li>
         <li id="footEmail" hidden><a id="footEmailLink" href="#"></a></li>
         <li>Venmo <a href="https://venmo.com/u/MSCleaningCo" target="_blank" rel="noopener">@MSCleaningCo</a> (preferred)</li><li>All payment types accepted</li>
       </ul>
@@ -867,12 +918,13 @@ footer .copy { grid-column: 1 / -1; border-top: 1px solid var(--line); padding-t
       <ul>
         <li><a href="#services">Services</a></li>
         <li><a href="#estimate">Price estimator</a></li>
+        <li><a href="#areas">Service areas &amp; hours</a></li>
         <li><a href="#policy">Deposit &amp; cancellation</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#quote">Free quote</a></li>
       </ul>
     </div>
-    <div class="copy">© <span id="yr">2026</span> Mom and Son Cleaning Co. · <span class="js-area">Lewisville, DeSoto and the DFW area</span></div>
+    <div class="copy">© <span id="yr">2026</span> Mom and Son Cleaning Co. · <span class="js-area">16 Dallas-area cities</span></div>
   </div>
 </footer>
 
@@ -889,7 +941,7 @@ const CONFIG = {
   textTo: "+14695592298",           // quote requests go to Justin
   email: "justinsproacc@gmail.com", // quote requests can also come by email
   emailCopy: true,                  // also email every request to `email` automatically (FormSubmit; needs one-time activation from Gmail)
-  area: "Lewisville, DeSoto and the DFW area",
+  area: "16 Dallas-area cities",
   pricing: {
     base: {1: 120, 2: 150, 3: 180, 4: 220, 5: 260}, extraBath: 20, halfBath: 10, minimum: 175, rangePct: 0.10,
     pets: 0.10, heavy: 0.25,
