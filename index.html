@@ -147,11 +147,11 @@ a { color: var(--blue); }
 
 /* sections */
 section { padding-block: 80px; }
-.work-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.work-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
 .work-grid figure { margin: 0; overflow: hidden; border-radius: var(--r); border: 1px solid var(--line); box-shadow: var(--shadow-sm); background: var(--surface); }
 .work-grid img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
 .work-grid figcaption { padding: 12px 16px; color: var(--muted); font-size: .94rem; }
-@media (max-width: 640px) { .work-grid { grid-template-columns: 1fr; } }
+@media (max-width: 980px) { .work-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; } .work-grid figcaption { padding: 10px 12px; font-size: .88rem; } }
 .alt { background: var(--bg-alt); }
 .eyebrow { display: inline-block; font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; color: var(--blue); font-weight: 700; margin-bottom: 10px; }
 .head { max-width: 640px; margin-bottom: 36px; }
@@ -596,11 +596,17 @@ footer .copy { grid-column: 1 / -1; border-top: 1px solid var(--line); padding-t
       <div class="head center rv">
         <span class="eyebrow">Our work</span>
         <h2 id="work-h">See the clean for yourself</h2>
-        <p>Real photos from a kitchen we cleaned, with no stock images.</p>
+        <p>Real photos from homes we cleaned, with no stock images.</p>
       </div>
       <div class="work-grid">
         <figure class="rv"><img src="kitchen-sink.jpg" width="1512" height="1452" loading="lazy" alt="Clean white kitchen with spotless counters and a shining stainless steel sink"><figcaption>Counters and sink wiped down and shining</figcaption></figure>
         <figure class="rv"><img src="kitchen-stove.jpg" width="1411" height="1079" loading="lazy" alt="Clean white gas stove, range hood and cabinets in a bright kitchen"><figcaption>Stove, range hood and cabinets cleaned</figcaption></figure>
+        <figure class="rv"><img src="work-kitchen-white.jpg" width="1400" height="1092" loading="lazy" alt="Clean white kitchen with bright counters, a stainless steel sink and dishwasher"><figcaption>White kitchen, counters and sink cleaned</figcaption></figure>
+        <figure class="rv"><img src="work-living-room.jpg" width="910" height="1400" loading="lazy" alt="Empty living room with freshly mopped wood-look floors and clean walls"><figcaption>Living room floors mopped and shining</figcaption></figure>
+        <figure class="rv"><img src="work-entry-hall.jpg" width="1155" height="1400" loading="lazy" alt="Clean entry hallway with polished wood-look floors leading to a white front door"><figcaption>Entry hallway floors cleaned</figcaption></figure>
+        <figure class="rv"><img src="work-bathroom.jpg" width="1011" height="1400" loading="lazy" alt="Clean bathroom with a white vanity, sink, toilet and wood-look floor"><figcaption>Bathroom sink, toilet and floor cleaned</figcaption></figure>
+        <figure class="rv"><img src="work-dining-area.jpg" width="1280" height="1070" loading="lazy" alt="Empty dining area with a clean tile floor and a bright window"><figcaption>Tile floor mopped in the dining area</figcaption></figure>
+        <figure class="rv"><img src="work-hallway.jpg" width="1400" height="1447" loading="lazy" alt="Clean hallway with mopped wood-look floors and white trim"><figcaption>Hallway floors and trim cleaned</figcaption></figure>
       </div>
     </div>
   </section>
